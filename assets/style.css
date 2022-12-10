@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+#root {
+  max-width: 1440px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  margin: 0;
+  background-color: hsl(212, 45%, 89%);
+  font-size: 15px;
+}
+
+.frame {
+  position: absolute;
+  width: 350px;
+  height: 560px;
+  border-radius: 25px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  background: hsl(0, 0%, 100%);
+  margin-top: 12%;
+  margin-left: 42%;
+}
+
+.card-qr {
+  margin-top: 15px;
+  margin-left: 15px;
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
+
+.img-qr {
+  display: block;
+  width: 320px;
+  height: 320px;
+  position: relative;
+}
+
+.text {
+  margin: 0;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.titulo {
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: hsl(218, 44%, 22%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+
+.descricao {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 0;
+  margin-right: 25px;
+  margin-left: 25px;
+  text-align: center;
+  font-size: 17px;
+  color: hsl(220, 15%, 55%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.attribution {
+  display: block;
+  font-family: "Outfit", sans-serif;
+  position: absolute;
+  margin-top: 43%;
+  margin-left: 44.5%;
+  font-size: 18px;
+  color: hsl(218, 44%, 22%);
+}
+
+a {
+  color: hsl(218, 44%, 22%);
+}
+
+.nome {
+  color: hsl(220, 15%, 55%);
+  text-decoration: none;
+}
+
+/* ============= MEDIA ================= */
+
+@media screen and (max-width: 375px) {
+  .frame {
+    margin-top: 130px;
+    margin-left: 18px;
+    position: absolute;
+    width: 340px;
+    height: 550px;
+  }
+
+  .card-qr {
+    width: 310px;
+    height: 310px;
+  }
+
+  .img-qr {
+    width: 310px;
+    height: 310px;
+  }
+
+  .attribution {
+    margin-top: 190%;
+    margin-left: 16%;
+  }
+
+  a {
+    color: hsl(218, 44%, 22%);
+  }
+}
+
+
+/*========= DESKTOP = 1440PX ==============*/
+
+@media screen and (max-width: 1440px) {
+  .frame {
+    position: absolute;
+    width: 300px;
+    height: 465px;
+    border-radius: 25px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    background: hsl(0, 0%, 100%);
+    margin-left: 40%;
+  }
+
+  .card-qr {
+    
+    position: relative;
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+  }
+  
+
+  .attribution {
+    margin-top: 51%;
+    margin-left: 43%;
+  }
+  
+  .img-qr {
+    width: 270px;
+    height: 250px;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+  
+  .descricao {
+
+    font-size: 15px;
+  }
+  
+  .attribution {
+    margin-top: 46%;
+    margin-left: 43%;
+    font-size: 16px;
+  }
+}
